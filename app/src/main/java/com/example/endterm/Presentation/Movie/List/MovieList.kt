@@ -73,5 +73,6 @@ class MovieList : Fragment(){
 
     private fun setAdapter() {
         recyclerView.adapter = movieAdapter
+
     }
 }

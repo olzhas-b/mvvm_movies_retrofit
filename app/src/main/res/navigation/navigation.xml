@@ -32,6 +32,10 @@
         android:id="@+id/profileFragment"
         android:name="com.example.endterm.Presentation.Movie.Profile.Profile"
         android:label="Profile" />
+    <fragment
+        android:id="@+id/cinemaFragment"
+        android:name="com.example.endterm.Presentation.Cinema.CinemaFragment"
+        android:label="Cinema" />
 
 
 </navigation>
