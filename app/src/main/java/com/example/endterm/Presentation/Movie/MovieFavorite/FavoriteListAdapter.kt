@@ -14,7 +14,7 @@ import com.example.endterm.Utils.Constant
 
 
 
-class ViewAdapter( ) : RecyclerView.Adapter<ViewAdapter.MoviesViewHolder>() {
+class FavoriteListAdapter( ) : RecyclerView.Adapter<FavoriteListAdapter.MoviesViewHolder>() {
 
 
 
@@ -56,11 +56,6 @@ class ViewAdapter( ) : RecyclerView.Adapter<ViewAdapter.MoviesViewHolder>() {
             Log.d("MovieAdapter:", imageUrl + "   -----  " +  itemView.context.toString() + " -----  " + image.toString() + " ]]] ")
         }
 
-//        fun setItemClick(movie: MovieData) {
-//            itemView.setOnClickListener{
-//                movieClickListener.onMovieClick(movie)
-//            }
-//        }
     }
 
     override fun onCreateViewHolder(
@@ -78,7 +73,6 @@ class ViewAdapter( ) : RecyclerView.Adapter<ViewAdapter.MoviesViewHolder>() {
     override fun onBindViewHolder(holder: MoviesViewHolder, position: Int) {
         val movie = movieList[position]
         holder.bind(movie)
-        //holder.setItemClick(movie)
     }
 
 }
